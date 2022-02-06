@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="Keywords" content="website, diseño grafico, freelancer, community manager, social media">
+    <meta name="Description" content="Servicios de ✅ #diseñografico, ✅ #desarrolloweb, ✅ #communitymanager y otro servicios para EMPRENDEDORES y PYMES, 📞 098 211 9983.">
+    <meta name="author" content="hikaru producciones">
+    <meta name="owner" content="https://www.facebook.com/hikarupdc/">
+    <meta name="designer" content="https://www.facebook.com/hikarupdc/">
+    <meta name="copyrigth" content="hikaru producciones">
+    <meta name="robots" content="Index,Follow">
+    <title>Servicios de Branding - diseño web - social media 🔥↑ - ikaru</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+<Link rel ="canonical" href="">
+
+  
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="js/projectoweb.js?1569426684498"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+  canvas = document.getElementById("canvas");
+  anim_container = document.getElementById("animation_container");
+  dom_overlay_container = document.getElementById("dom_overlay_container");
+  var comp=AdobeAn.getComposition("2217825BF25A6649925512203C011A5B");
+  var lib=comp.getLibrary();
+  var loader = new createjs.LoadQueue(false);
+  loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+  loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+  var lib=comp.getLibrary();
+  loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+  var images=comp.getImages();  
+  if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }  
+}
+function handleComplete(evt,comp) {
+  //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+  var lib=comp.getLibrary();
+  var ss=comp.getSpriteSheet();
+  var queue = evt.target;
+  var ssMetadata = lib.ssMetadata;
+  for(i=0; i<ssMetadata.length; i++) {
+    ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+  }
+  exportRoot = new lib.projectoweb();
+  stage = new lib.Stage(canvas);  
+  //Registers the "tick" event listener.
+  fnStartAnimation = function() {
+    stage.addChild(exportRoot);
+    createjs.Ticker.setFPS(lib.properties.fps);
+    createjs.Ticker.addEventListener("tick", stage);
+  }     
+  //Code to support hidpi screens and responsive scaling.
+  AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]); 
+  AdobeAn.compositionLoaded(lib.properties.id);
+  fnStartAnimation();
+}
+</script>
+
+<style>
+    h1{   
+        font-size: 70px; 
+    }
+    .icono{
+    color:#ff655b;
+}
+
+</style>
+</head>
+
+<body  onload="init();" style="margin:0px; background: #28192e;" itemprop="organization" itemtype="http://schema.org/Organization">
+<meta itemprop="publisher" content="Hikaru"/>
+
+  <header>
+    <div class="container my-2">
+          <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Container wrapper -->
+        <div class="container">
+          <!-- Navbar brand -->
+          <div class="col-4 col-md-3 footer-newsletter text-white blcks">
+              <button class="btn btn-red btn-floating mx-1">
+                <a href="https://www.facebook.com/hikarupdc" target="_blank"> <i class="fab fa-facebook-f text-white"></i></a>
+              </button>
+
+              <button class="btn btn-red btn-floating mx-1">
+                  <a href="https://www.instagram.com/hikarupdc/" target="_blank"><i class="fab fa-instagram text-white"></i></a>
+              </button>
+
+              <button type="button" class="btn btn-red btn-floating mx-1">
+                  <a href="https://www.behance.net/hikarupdc" target="_blank"><i class="fab fa-behance text-white"></i></a>
+              </button>
+          </div>
+
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="col-md-4 logo">
+                <a class="navbar-brand" href="index.html">
+                  <img src="img/menu.png" class="img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-6 col-md-2 blcks">
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class=" description text-center my-2">
+                  <a href="https://api.whatsapp.com/send?phone=593982119983" class="btn mt-2"><i class="fab fa-whatsapp"></i> Escribeme</a>
+                </div>
+
+            </div>
+            <!-- Collapsible wrapper -->
+          </div>
+        </div>
+        <!-- Container wrapper -->
+      </nav>    
+
+    </div>
+  </header>
+
+  <section>
+    <div class="container-fluid">
+      <div class="container mt-5">
+        <div class="row ">
+          <div class="col-md-6 py-4">
+              <div class="col-md-12 text-white" >
+              <p>- Hola, mi nombre es</p>
+            </div>
+            <div class="col-md-12 mt-1" >
+              <h1 class="h1-responsive text-white font-weight-bold" itemprop="name">Kevin Viteri<span style="color: #ff655b;">.</span></h1>
+              <p class="text-white" itemprop="name">Y soy un Freelance Creativo, con conocimientos en desarrollo web y Branding y te doy la bienvenida a mi portafolio web.</p>
+            </div>
+            <div class="col-md-12 btnlp text-left mt-3 mb-5" itemprop="author">
+              <a href="inicio.html" class="btn mt-2"><small>VER MI TRABAJO <i class="fas fa-angle-double-right"></i></small></a>
+            </div>
+            
+            <div class="col-md-12 text-white my-5">
+                          <div class="row">
+                              <div class="col-6 col-md-6 text-num mt-2 text-left py-3 px-4">
+                                  <div class="row">
+                                    <div class="col-md-3">
+                                      <i class="icono fa fa-envelope-open-text fa-2x mt-2"></i>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <small class="pservicios">Email</small>
+                                        <small><div class="textfooterss">hikaruproduc@hotmail.com </div></small>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-6 col-md-6 text-num mt-2 text-left py-3 px-4">
+                                  <div class="row">
+                                    <div class="col-md-2">
+                                      <i class="icono fab fa-whatsapp fa-2x mt-2"></i>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <small class="pservicios">Contactame</small>
+                                        <small><div class="textfooterss">(+593) 982-119-983 </div></small>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+          </div>
+          
+          <div class="col-md-5  text-center mt-5 py-3 animacion">
+            <div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:402px; height:393px">
+              <canvas id="canvas" width="402" height="393" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+              <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:402px; height:393px; position: absolute; left: 0px; top: 0px; display: block;">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+<div class="demo-content busca nlcs" >
+  <div id="vertical-orientation">
+      <a href="https://www.facebook.com/hikarupdc/" target="_blank" ><i class="fab fa-facebook mx-1"></i></a> 
+      <a href="https://www.instagram.com/hikarupdc/" target="_blank" ><i class="icono fab fa-instagram mx-1"></i></a> 
+      <a href="https://www.behance.net/hikarupdc" target="_blank" ><i class=" fab fa-behance"></i></a> @hikarupdc</div>
+</div>
+  
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+
+</body>
+</html>
